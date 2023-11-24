@@ -1,42 +1,70 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.App {
   text-align: center;
+  margin-top: 50px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.todo-container {
+  width: 700px;
+  margin: 0 auto;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todo-form {
+  display: flex;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.todo-form input {
+  flex: 1;
+  padding: 8px;
+  outline: none;
+  border: 1px solid black;
+  border-right: none;
 }
 
-.card {
-  padding: 2em;
+.todo-form button {
+  border-radius: 0;
+  /* padding: 8px;
+  margin-left: 5px; */
 }
 
-.read-the-docs {
-  color: #888;
+.btn-primary:focus{
+  box-shadow: none !important;
 }
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.todo-list button {
+  padding: 5px 10px;
+  margin-left: 5px;
+}
+
+.todo-list li:hover {
+  background-color: #e2e6ea;
+}
+
+.action-btn{
+  width: 40px;
+  height: 40px;
+  border: none;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 5px;
+}
+
